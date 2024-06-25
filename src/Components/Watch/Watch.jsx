@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import './Watch.css'
-import Watch from '../Watch/Watch'
+import "./Watch.css";
 
-const Watch = () => {
-    return (
-        <div>
-            <Watch></Watch>
-        </div>
-    );
+const Watch = ({ watch }) => {
+	const { name, price } = watch;
+	return (
+		<div>
+			<h2>Watch: {name}</h2>
+			<p>Price: {price}</p>
+		</div>
+	);
 };
 
 export default Watch;
